@@ -107,3 +107,15 @@
         background: rgb(255, 255, 255, 0.5);
     }
 }
+
+@media only screen and (max-width: 470px) {
+    .hero-section-container .hero-container .text-container {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .hero-section-container .hero-container .text-container {
+        width: 85%;
+    }
+}
