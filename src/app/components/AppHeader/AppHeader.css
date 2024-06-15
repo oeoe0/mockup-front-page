@@ -29,11 +29,11 @@
     position: absolute;
     left: 0;
     margin-left: 5rem;
-    color: black;
+    color: rgb(255, 56, 132);
 }
 
 .app-header-container .insta-btn:hover {
-    color: rgb(255, 0, 98);
+    color: rgb(255, 114, 168);
 }
 
 
