@@ -1,0 +1,44 @@
+.app-footer-container {
+    background: black;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.app-footer-container a {
+    text-decoration: none;
+    color: white;
+    font-family: "MyFont";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3rem;
+}
+
+.app-footer-container a:hover {
+    text-decoration: underline;
+}
+
+.app-footer-container .links-container {
+    width: 30rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1rem;
+}
+
+
+@media only screen and (max-width: 500px) {
+    .app-footer-container .links-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .app-footer-container a {
+        margin-bottom: 2.5rem;
+    }
+
+    .app-footer-container a:last-child {
+        margin-bottom: 0;
+    }
+}

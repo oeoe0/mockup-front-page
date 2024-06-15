@@ -1,0 +1,40 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #e8ccc2;
+  background: rgb(232, 204, 194, 0.2);
+  background: rgb(252, 252, 252);
+}
+
+.noto-serif-display-normal {
+  font-family: "Noto Serif Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.hero-btn {
+  border: 1px solid;
+  border-radius: 100px;
+  padding: 0.7rem 3rem;
+  background: white;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  background: grey;
+}
+
+@font-face {
+  font-family: 'MyFont2';
+  src: url("../resources/fonts/Explora/Explora-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'MyFont';
+  src: url("../resources/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf");
+}

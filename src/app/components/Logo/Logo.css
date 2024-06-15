@@ -1,0 +1,39 @@
+.logo-container {
+    border: solid 0px;
+    width: fit-content;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    /*
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    */
+    font-family: "MyFont";
+}
+
+.logo-container p {
+    margin: 0;
+    padding: 0;
+}
+
+
+.logo-container .top-text {
+    letter-spacing: 19px;
+    text-indent: -19px;
+    direction: rtl;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.logo-container .bottom-text {
+    letter-spacing: 5px;
+    text-indent: -5px;
+    direction: rtl;
+    font-size: 1.25rem;
+}

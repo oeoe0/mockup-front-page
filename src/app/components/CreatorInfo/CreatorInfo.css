@@ -1,0 +1,61 @@
+.creator-info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 0px;
+    margin-top: 5rem;
+}
+
+.creator-info-container * {
+    margin: 0;
+    padding: 0;
+}
+
+.creator-info-container .content .bg {
+    background-image: linear-gradient(to right top, #e8ccc2, #f0d7d8, #f3e5ea, #f7f2f7, #ffffff);
+    background-image: linear-gradient(to right top, #e8ccc2, #eec7bc, #f4c1b8, #fabbb6, #ffb5b5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.creator-info-container .content {
+    width: 75rem;
+    position: relative;
+    padding: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+}
+
+.creator-info-container .content h4 {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.creator-info-container .content h5 {
+    font-size: 2rem;
+    letter-spacing: 3px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.creator-info-container .content p {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+
+.creator-info-container .content .title {
+    margin-top: 2rem;
+}

@@ -1,0 +1,58 @@
+.app-header-container {
+    border: 0px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7rem;
+    position: sticky;
+    top: 0;
+    margin-bottom: -7rem;
+    background: white;
+    box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    padding: 1rem;
+}
+
+.app-header-container .burger-menu-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    margin-right: 5rem;
+}
+
+.app-header-container .insta-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    margin-left: 5rem;
+    color: black;
+}
+
+.app-header-container .insta-btn:hover {
+    color: rgb(255, 0, 98);
+}
+
+
+@media only screen and (max-width: 750px) {
+    .app-header-container .burger-menu-btn {
+        margin-right: 3rem;
+    }
+
+    .app-header-container .insta-btn {
+        margin-left: 3rem;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .app-header-container .burger-menu-btn {
+        margin-right: 2rem;
+    }
+
+    .app-header-container .insta-btn {
+        margin-left: 2rem;
+    }
+}

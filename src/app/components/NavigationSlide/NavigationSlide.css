@@ -1,0 +1,94 @@
+.navigation-slide-container {
+    position: fixed;
+    background: rgb(179, 129, 132, 0.5);
+    backdrop-filter: blur(1rem);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 0vw;
+    transition: all 200ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    overflow: hidden;
+}
+
+.navigation-slide-container .nav-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    --s: 50px;
+    /* the size on the corner */
+    --t: 0.3rem;
+    /* the thickness of the border */
+    --g: 1rem;
+    /* the gap between the border and image */
+
+    padding: 1rem 3.5rem;
+    outline: var(--t) solid white;
+    /* the color here */
+    outline-offset: calc(-1*var(--t));
+    mask:
+        conic-gradient(at var(--s) var(--s), #0000 75%, #000 0) 0 0/calc(100% - var(--s)) calc(100% - var(--s)),
+        linear-gradient(#000 0 0) content-box;
+    transition: .4s;
+}
+
+.navigation-slide-container .nav-container:hover {
+    outline-offset: calc(var(--g)/-1);
+}
+
+.navigation-slide-container .nav a {
+    text-decoration: none;
+    color: rgb(75, 75, 75);
+    font-size: 2rem;
+    color: white;
+    transition: all 200ms;
+}
+
+
+.navigation-slide-container .nav a:hover {
+    color: rgb(78, 78, 78);
+    text-shadow: #ffffff 0px 0px 10px;
+}
+
+.navigation-slide-container .nav-container h4 {
+    font-size: 3rem;
+    color: white;
+}
+
+.navigation-slide-container .nav-container ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.navigation-slide-container .nav-container li {
+    margin-bottom: 2rem;
+}
+
+.navigation-slide-container .close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 3rem;
+    border: none;
+    background: none;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+.navigation-slide-container .close-btn:hover {
+    border-radius: 100px;
+    background: rgb(255, 255, 255, 0.5);
+}
