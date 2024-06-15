@@ -26,7 +26,7 @@
     --g: 1rem;
     /* the gap between the border and image */
 
-    padding: 1rem 3.5rem;
+    padding: 3rem 3.5rem;
     outline: var(--t) solid white;
     /* the color here */
     outline-offset: calc(-1*var(--t));
@@ -57,6 +57,10 @@
 .navigation-slide-container .nav-container h4 {
     font-size: 3rem;
     color: white;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2rem;
+    font-weight: 400;
 }
 
 .navigation-slide-container .nav-container ul {
@@ -70,6 +74,10 @@
 
 .navigation-slide-container .nav-container li {
     margin-bottom: 2rem;
+}
+
+.navigation-slide-container .nav-container li:last-child {
+    margin-bottom: 0;
 }
 
 .navigation-slide-container .close-btn {
@@ -91,4 +99,15 @@
 .navigation-slide-container .close-btn:hover {
     border-radius: 100px;
     background: rgb(255, 255, 255, 0.5);
+}
+
+
+@media only screen and (max-height: 750px) {
+    .navigation-slide-container .nav-container {
+        
+    }
+
+    .navigation-slide-container .close-btn {
+        margin: 2rem;
+    }
 }
